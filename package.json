@@ -1,0 +1,22 @@
+{
+  "name": "automationexercise-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright TypeScript automation suite for automationexercise.com covering the top 5 test cases, plus a Passmark natural-language spec.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:passmark": "playwright test tests/passmark",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://automationexercise.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "passmark": "latest"
+  }
+}
